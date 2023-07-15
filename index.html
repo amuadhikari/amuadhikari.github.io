@@ -52,7 +52,13 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
+									<span class="date"><script>
+										date = new Date();
+										year = date.getFullYear();
+										month = date.getMonth() + 1;
+										day = date.getDate();
+										document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+										</script></span>
 									<h2><a href="#">Short Bio</a></h2>
 									<p>Hello, welcome to my webpage. I am a professional architect currently pursuing my masters from 
 										Virginia Tech.
